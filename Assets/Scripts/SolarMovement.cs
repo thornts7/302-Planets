@@ -31,7 +31,7 @@ public class SolarMovement : MonoBehaviour
     //Vector3 Rot;
 
     float Tim;
-    [Range(-1f, 1f)] public float TimCon = 0;
+    [Range(-.2f, .2f)] public float TimCon = 0;
     float RoTim = 0;
 
     bool NotPaused = true;
@@ -41,7 +41,6 @@ public class SolarMovement : MonoBehaviour
     {
         timeSliderButton.onClick.AddListener(ResetTimeSlider);
         Pause.onClick.AddListener(PauseGame);
-        Play.onClick.AddListener(UnpauseGame);
     }
 
     // Update is called once per frame
@@ -85,6 +84,8 @@ public class SolarMovement : MonoBehaviour
 
         if (NotPaused)
         {
+            gameObject.transform.Rotate(0, RoTim/2, 0);
+
             Planet1.transform.Rotate(0, RoTim, 0);
             Planet2.transform.Rotate(0, RoTim, 0);
             Planet3.transform.Rotate(0, RoTim, 0);
@@ -136,11 +137,15 @@ public class SolarMovement : MonoBehaviour
 
     void PauseGame()
     {
-        NotPaused = false;
-    }
-
-    void UnpauseGame()
-    {
-        NotPaused = true;
+        if (NotPaused)
+        {
+            NotPaused = false;
+            return;
+        }
+        if (!NotPaused)
+        {
+            NotPaused = true;
+            return;
+        }
     }
 }

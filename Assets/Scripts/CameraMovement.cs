@@ -54,37 +54,37 @@ public class CameraMovement : MonoBehaviour
 
         if (target == 1)
         {
-            NextPos.x = Planet1.transform.position.x + 1f;
-            NextPos.z = Planet1.transform.position.z - 1f;
-            NextPos.y = Planet1.transform.position.y + 1f;
+            NextPos.x = Planet1.transform.position.x + 2f;
+            NextPos.z = Planet1.transform.position.z - 2f;
+            NextPos.y = Planet1.transform.position.y + 2f;
         }
 
         if (target == 2)
         {
-            NextPos.x = Planet2.transform.position.x + 1f;
-            NextPos.z = Planet2.transform.position.z - 1f;
-            NextPos.y = Planet2.transform.position.y + 1f;
+            NextPos.x = Planet2.transform.position.x + 2f;
+            NextPos.z = Planet2.transform.position.z - 2f;
+            NextPos.y = Planet2.transform.position.y + 2f;
         }
 
         if (target == 3)
         {
-            NextPos.x = Planet3.transform.position.x + 1f;
-            NextPos.z = Planet3.transform.position.z - 1f;
-            NextPos.y = Planet3.transform.position.y + 1f;
+            NextPos.x = Planet3.transform.position.x + 2f;
+            NextPos.z = Planet3.transform.position.z - 2f;
+            NextPos.y = Planet3.transform.position.y + 2f;
         }
 
         if (target == 4)
         {
-            NextPos.x = Planet4.transform.position.x + 1f;
-            NextPos.z = Planet4.transform.position.z - 1f;
-            NextPos.y = Planet4.transform.position.y + 1f;
+            NextPos.x = Planet4.transform.position.x + 2f;
+            NextPos.z = Planet4.transform.position.z - 2f;
+            NextPos.y = Planet4.transform.position.y + 2f;
         }
 
         if (target == 5)
         {
-            NextPos.x = Planet5.transform.position.x + 1f;
-            NextPos.z = Planet5.transform.position.z - 1f;
-            NextPos.y = Planet5.transform.position.y + 1f;
+            NextPos.x = Planet5.transform.position.x + 2f;
+            NextPos.z = Planet5.transform.position.z - 2f;
+            NextPos.y = Planet5.transform.position.y + 2f;
         }
 
         if (percent < 1)

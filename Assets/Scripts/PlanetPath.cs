@@ -9,13 +9,14 @@ public class PlanetPath : MonoBehaviour
     public LineRenderer OrbitPath;
     public Material material;
     public float radius = 6;
-    public int resolution = 32;
+    public int resolution = 70;
 
     void Start()
     {
         OrbitPath = GetComponent<LineRenderer>();
         OrbitPath.loop = true;
         OrbitPath.material = material;
+        OrbitPath.startWidth = 0.01f;
     }
 
     // Update is called once per frame
